@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Katik</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>My Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="container">
+    <h1>Welcome to My Katik</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
 
-    <aside>
-        <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#analytics">Analytics</a></li>
-            <li><a href="#settings">Settings</a></li>
-        </ul>
-    </aside>
+    <div class="nav-buttons">
+      <button class="btn segitiga">Segitiga</button>
+      <button class="btn jajar-genjang">Jajar Genjang</button>
+    </div>
 
-    <main>
-        <section class="card">
-            <h2>Welcome!</h2>
-            <p>This is a simple dashboard built for the mini-project.</p>
-        </section>
-        <section class="card">
-            <h2>Analytics</h2>
-            <canvas id="myChart"></canvas>
-        </section>
-    </main>
+    <div class="content">
+      <div class="box">
+        <h2>Luas Segitiga</h2>
+        <img src="https://i.ibb.co/0JxZH1L/segitiga.png" alt="Segitiga"/>
+        <p>Rumus Luas Segitiga: 1/2 × alas × tinggi</p>
 
-    <footer>
-        <p>&copy; 2025 My Mini Project</p>
-    </footer>
+        <h3>Form Luas Segitiga</h3>
+        <form onsubmit="hitungLuas(event)">
+          <label>Alas:</label>
+          <input type="number" id="alas" placeholder="Masukkan Alas Segitiga" required />
+          <label>Tinggi:</label>
+          <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga" required />
+          <button type="submit">Hitung</button>
+          <p id="hasilLuas"></p>
+        </form>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="main.js"></script>
+      <div class="box">
+        <h2>Keliling Segitiga</h2>
+        <img src="https://i.ibb.co/0JxZH1L/segitiga.png" alt="Segitiga"/>
+        <p>Rumus Keliling Segitiga: S1 + S2 + S3</p>
+
+        <h3>Form Keliling Segitiga</h3>
+        <form onsubmit="hitungKeliling(event)">
+          <label>Sisi A:</label>
+          <input type="number" id="s1" placeholder="Masukkan Sisi A" required />
+          <label>Sisi B:</label>
+          <input type="number" id="s2" placeholder="Masukkan Sisi B" required />
+          <label>Sisi C:</label>
+          <input type="number" id="s3" placeholder="Masukkan Sisi C" required />
+          <button type="submit">Hitung</button>
+          <p id="hasilKeliling"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
