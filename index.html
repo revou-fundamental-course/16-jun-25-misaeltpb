@@ -1,58 +1,85 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Katik</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Welcome to My Katik</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Website Matematik - Misael</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to My Katik</h1>
+      <hr>
+      <p><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged.</b></p>
 
-    <div class="nav-buttons">
-      <button class="btn segitiga">Segitiga</button>
-      <button class="btn jajar-genjang">Jajar Genjang</button>
-    </div>
-
-    <div class="content">
-      <div class="box">
-        <h2>Luas Segitiga</h2>
-        <img src="https://i.ibb.co/0JxZH1L/segitiga.png" alt="Segitiga"/>
-        <p>Rumus Luas Segitiga: 1/2 × alas × tinggi</p>
-
-        <h3>Form Luas Segitiga</h3>
-        <form onsubmit="hitungLuas(event)">
-          <label>Alas:</label>
-          <input type="number" id="alas" placeholder="Masukkan Alas Segitiga" required />
-          <label>Tinggi:</label>
-          <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga" required />
-          <button type="submit">Hitung</button>
-          <p id="hasilLuas"></p>
-        </form>
+      <div class="nav-buttons">
+        <button class="btn segitiga">Segitiga</button>
+        <button class="btn jajar-genjang">Jajar Genjang</button>
       </div>
 
-      <div class="box">
-        <h2>Keliling Segitiga</h2>
-        <img src="https://i.ibb.co/0JxZH1L/segitiga.png" alt="Segitiga"/>
-        <p>Rumus Keliling Segitiga: S1 + S2 + S3</p>
+      <div class="content">
+        <!-- Box Luas Segitiga -->
+        <div class="box">
+          <h2>Luas Segitiga</h2>
+          <img src="gambar segitiga.png" alt="Segitiga"/>
+          <p><b>Rumus Luas Segitiga: L = 1/2 × alas × tinggi</b></p>
+          <p>Di mana:</p>
+          <p>L = luas</p>
+          <p>a = panjang alas</p>
+          <p>t = tinggi</p>
 
-        <h3>Form Keliling Segitiga</h3>
-        <form onsubmit="hitungKeliling(event)">
-          <label>Sisi A:</label>
-          <input type="number" id="s1" placeholder="Masukkan Sisi A" required />
-          <label>Sisi B:</label>
-          <input type="number" id="s2" placeholder="Masukkan Sisi B" required />
-          <label>Sisi C:</label>
-          <input type="number" id="s3" placeholder="Masukkan Sisi C" required />
-          <button type="submit">Hitung</button>
-          <p id="hasilKeliling"></p>
-        </form>
+          <h3>Hitung Luas Segitiga</h3>
+          <form onsubmit="hitungLuas(event)">
+            <label>Alas:</label>
+            <input type="number" id="alas" placeholder="Masukkan Alas Segitiga" required />
+            <label>Tinggi:</label>
+            <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga" required />
+            <div class="form-buttons">
+              <button type="submit">Hitung</button>
+              <button type="button" class="btn-reset" onclick="resetLuas()">Reset</button>
+            </div>
+            <p id="hasilLuas"></p>
+            <footer>
+            <p>© 2025 Misael Elul Tampubolon</p>
+          </footer>
+          </form>
+        </div>
+
+        <!-- Box Keliling Segitiga -->
+        <div class="box">
+          <h2>Keliling Segitiga</h2>
+          <img src="gambar segitiga.png" alt="Segitiga"/>
+          <p><b>Rumus Keliling Segitiga: K = S1 + S2 + S3</b></p>
+          <p>Di mana:</p>
+          <p>K = keliling</p>
+          <p>S1 = sisi A</p>
+          <p>S2 = sisi B</p>
+          <p>S3 = sisi C</p>
+          <hr>
+          <h3>Hitung Keliling Segitiga</h3>
+          <form onsubmit="hitungKeliling(event)">
+            <label>Sisi A:</label>
+            <input type="number" id="s1" placeholder="Masukkan Sisi A" required />
+            <label>Sisi B:</label>
+            <input type="number" id="s2" placeholder="Masukkan Sisi B" required />
+            <label>Sisi C:</label>
+            <input type="number" id="s3" placeholder="Masukkan Sisi C" required />
+            <div class="form-buttons">
+              <button type="submit">Hitung</button>
+              <button type="button" class="btn-reset" onclick="resetKeliling()">Reset</button>
+            </div>
+            <p id="hasilKeliling"></p> 
+            <footer>
+            <p>© 2025 Misael Elul Tampubolon</p>
+          </footer>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
