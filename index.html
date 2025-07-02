@@ -1,85 +1,125 @@
-  <!DOCTYPE html>
-  <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Website Matematik - Misael</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to My Katik</h1>
-      <hr>
-      <p><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-      essentially unchanged.</b></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto 2000 Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-      <div class="nav-buttons">
-        <button class="btn segitiga">Segitiga</button>
-        <button class="btn jajar-genjang">Jajar Genjang</button>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">😊</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#headquarter">Portfolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero" id="home">
+  <h1 id="welcome">Hi <span id="name-display">Name</span>, Welcome To My Website - Misael Tampubolon</h1>
+  <p>This is your first portfolio website</p>
+  <div class="hero-image">
+    <img src="AUTO 2000 GAMBAR.jpeg" alt="Banner Misael" />
+  </div>
+</section>
+
+
+  <!-- Company Profile -->
+  <section class="company-profile" id="profile">
+    <h2>Tentang Perusahaan</h2>
+    <p>
+     Auto2000 adalah dealer resmi Toyota terbesar di Indonesia, yang berada di bawa
+     h naungan PT Astra International Tbk melalui divisi bisnisnya Astra International - Toyota Sales Operation (TSO).
+      Auto2000 menjual mobil Toyota, memberikan layanan purna jual (servis, suku cadang), serta menyediakan layanan pembiayaan dan asuransi 
+      kendaraan.
+
+    </p>
+
+    <h3>Visi</h3>
+    <p>
+      Menjadi retailer otomotif terbaik yang memberikan pengalaman pelanggan kelas dunia melalui inovasi digital.
+    </p>
+
+    <h3>Misi</h3>
+    <ul>
+      <li>Memberikan pelayanan terbaik kepada pelanggan Toyota di Indonesia.</li>
+      <li>Menyediakan solusi menyeluruh mulai dari pembelian, perawatan, hingga jual kembali mobil Toyota.</li>
+      <li>Meningkatkan kepuasan pelanggan dengan layanan berbasis teknologi dan digital.</li>
+      <li>Mengembangkan sumber daya manusia dan sistem operasional untuk mendukung keunggulan layanan.</li>
+    </ul>
+  </section>
+
+  <!-- Headquarters Section -->
+  <section class="headquarter" id="headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="cities">
+      <div class="city">
+        <div class="circle"></div>
+        <p>Jakarta</p>
       </div>
-
-      <div class="content">
-        <!-- Box Luas Segitiga -->
-        <div class="box">
-          <h2>Luas Segitiga</h2>
-          <img src="gambar segitiga.png" alt="Segitiga"/>
-          <p><b>Rumus Luas Segitiga: L = 1/2 × alas × tinggi</b></p>
-          <p>Di mana:</p>
-          <p>L = luas</p>
-          <p>a = panjang alas</p>
-          <p>t = tinggi</p>
-
-          <h3>Hitung Luas Segitiga</h3>
-          <form onsubmit="hitungLuas(event)">
-            <label>Alas:</label>
-            <input type="number" id="alas" placeholder="Masukkan Alas Segitiga" required />
-            <label>Tinggi:</label>
-            <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga" required />
-            <div class="form-buttons">
-              <button type="submit">Hitung</button>
-              <button type="button" class="btn-reset" onclick="resetLuas()">Reset</button>
-            </div>
-            <p id="hasilLuas"></p>
-            <footer>
-            <p>© 2025 Misael Elul Tampubolon</p>
-          </footer>
-          </form>
-        </div>
-
-        <!-- Box Keliling Segitiga -->
-        <div class="box">
-          <h2>Keliling Segitiga</h2>
-          <img src="gambar segitiga.png" alt="Segitiga"/>
-          <p><b>Rumus Keliling Segitiga: K = S1 + S2 + S3</b></p>
-          <p>Di mana:</p>
-          <p>K = keliling</p>
-          <p>S1 = sisi A</p>
-          <p>S2 = sisi B</p>
-          <p>S3 = sisi C</p>
-          <hr>
-          <h3>Hitung Keliling Segitiga</h3>
-          <form onsubmit="hitungKeliling(event)">
-            <label>Sisi A:</label>
-            <input type="number" id="s1" placeholder="Masukkan Sisi A" required />
-            <label>Sisi B:</label>
-            <input type="number" id="s2" placeholder="Masukkan Sisi B" required />
-            <label>Sisi C:</label>
-            <input type="number" id="s3" placeholder="Masukkan Sisi C" required />
-            <div class="form-buttons">
-              <button type="submit">Hitung</button>
-              <button type="button" class="btn-reset" onclick="resetKeliling()">Reset</button>
-            </div>
-            <p id="hasilKeliling"></p> 
-            <footer>
-            <p>© 2025 Misael Elul Tampubolon</p>
-          </footer>
-          </form>
-        </div>
+      <div class="city">
+        <div class="circle"></div>
+        <p>Bandung</p>
+      </div>
+      <div class="city">
+        <div class="circle"></div>
+        <p>Surabaya</p>
       </div>
     </div>
+  </section>
 
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+  <!-- Message Form Section -->
+  <section class="message-section" id="message">
+    <div class="message-form">
+      <h3>Message Us</h3>
+      <form id="messageForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" required pattern="[0-9]{10,13}" />
+
+        <label>Jenis Kelamin:</label>
+        <div class="gender">
+          <input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki
+          <input type="radio" name="gender" value="Perempuan" /> Perempuan
+        </div>
+
+        <label for="user-message">Pesan:</label>
+        <textarea id="user-message" required></textarea>
+
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Output after submission -->
+    <div class="message-output">
+      <p><strong>Current time:</strong> <span id="time"></span></p>
+      <p><strong>Nama:</strong> <span id="outputName"></span></p>
+      <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+      <p><strong>Phone:</strong> <span id="outputPhone"></span></p>
+      <p><strong>Gender:</strong> <span id="outputGender"></span></p>
+      <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Misael Tampubolon - misaeltampubolon9@gmail.com</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
